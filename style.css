@@ -1,24 +1,61 @@
+
+/* Add reset here*/
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: sans-serif;
   color: rgb(30,30,30);
+  /* border: 3px red solid; */
 }
 
+html,
+body,
+.card,
+.header,
+.bio,
+.blog,
+.projects,
+.footer {
+  border: solid 3px red;
+}
 a {
   text-decoration: none;
   color: inherit;
 }
-/* */
+
+section {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Card */
+
 .card { /* Make a dotted paper kind of background */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 35rem;
+  max-width: 40%;
   margin: auto;
   padding: 5rem;
+  padding-bottom: 2.5rem;
   background-color: rgba(230, 230, 230, 0.15);
   border-radius: 1%;
 }
-/* Biography Section */
+
+
+/* Header */
+
+.header {
+}
+
+/* Biography */
+
 .bio {
   margin-top: 5rem;
   display: flex;
@@ -29,22 +66,65 @@ a {
 }
 
 .bio-text {
-  margin: 0 3rem;
-}
-
-.bio-symbol {
-  margin: 0 1.5rem;
+  margin: 1rem;
+  margin-right: 0;
+  border: 3px red solid;
+  padding: 1rem;
+  padding-right: 0;
+  text-align: left;
 }
 
 .bio-picture { /* Disable copy img, click img etc.*/
+  background-color: rgb(30, 30, 30);
   width: 10rem;
   height: 10rem;
   border: rgb(30, 30, 30) 0.5rem solid;
   border-radius: 10rem;
-  /* align-self: center; */
+}
+
+/* Blog */
+
+.blog {
+}
+
+.blog-text {
+  text-align: center;
+}
+
+/* Projects */
+
+.projects {
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Text Style */
+
+.big-heading {
+  font-size: 5rem;
+  line-height: 0.25rem;
+}
+
+.medium-heading {
+  font-size: 2rem;
+  line-height: 0.25rem;
+}
+
+.small-heading {
+  font-size: 1rem;
+  line-height: 0.25rem;
+}
 
 .highlight { /*Work on a proper highlighting style -> animation left to right?*/
   background-color: yellow;
@@ -56,7 +136,6 @@ a {
 
 .huge {
   font-size: 10rem;
-  font-style: bold;
 }
 
 .bold {
@@ -64,18 +143,5 @@ a {
 }
 
 .link {
-  text-decoration:none;
-}
-footer {
-  margin-top: 4rem;
-  align-self: center;
-}
-h1 {
-  font-size: 5rem;
-  line-height: 0.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 0.25rem;
+  color: blue;
 }

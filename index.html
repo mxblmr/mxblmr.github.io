@@ -7,24 +7,39 @@
   </head>
   <body>
     <div class="card">
-      <h1>Hi, I'm <span class="highlight underline">Maxime</span></h1>
-      <h2>Computer Science Student</h2>
+      <header class="header">
+        <h1 class="big-heading">Hi, I'm <span class="highlight underline">Maxime</span></h1>
+        <!-- Blinking _ as if still typing-->
+        <h2 class="medium-heading">Computer Science Student</h2>
+      </header>
       <section class="bio">
-
         <img class="bio-picture" src="./img/face.jpg" alt="">
-        <span class="bio-symbol huge">{</span>
-        <p class="bio-text bold">Computer science student at University of Montreal,
-          espresso enthusiast, book worm and minimalism practitioner</p>
-
+        <p class="bio-text bold">Currently studying computer science at the
+        <a href="https://www.umontreal.ca/en/">University of Montreal</a>.
+        Quite an espresso enthusiast as well as a total book worm. Fan of
+        simplicity, and ethic.</p>
       </section>
-      <p>I also <a href="https://www.averysimple.blog">write</a></p>
-      <h3>Projects</h3>
-      <ul>
-        <li>PBWF Database & Meal Plan Generator</li>
-        <li>Project Two</li>
-      </ul>
-      <footer>
-        <h3><a class="link"href="mailto:hello@maximebellemare.com">Contact Me</a></h3>
+      <section class="blog"> <!-- JS script that display article?-->
+        <p class="blog-text bold">I also occasionaly <a href="https://www.averysimple.blog">
+        write</a></p>
+        <div class="blog-latest">
+
+        </div>
+      </section>
+      <section class="projects">
+        <h3>Projects</h3>
+        <ul>
+          <li>PBWF Database & Meal Plan Generator</li>
+          <li>More to come ...</li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <ul> <!--  li as right arrow -->
+          <li><a class="link"href="mailto:hello@maximebellemare.com">Contact Me</a></li>
+          <li><button type="button" name="button"></button></li>
+          <!-- sun/moon icon for dark mode-->
+          <li>Curiculum Vitae</li>
+        </ul>
       </footer>
     </div>
 
