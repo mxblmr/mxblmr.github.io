@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  color: rgb(30,30,30);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* */
+.card { /* Make a dotted paper kind of background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35rem;
+  margin: auto;
+  padding: 5rem;
+  background-color: rgba(230, 230, 230, 0.15);
+  border-radius: 1%;
+}
+/* Biography Section */
+.bio {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.bio-title {
+  align-self: center;
+}
+
+.bio-text {
+  margin: 0 3rem;
+}
+
+.bio-symbol {
+  margin: 0 1.5rem;
+}
+
+.bio-picture { /* Disable copy img, click img etc.*/
+  width: 10rem;
+  height: 10rem;
+  border: rgb(30, 30, 30) 0.5rem solid;
+  border-radius: 10rem;
+  /* align-self: center; */
+}
+
+/* Text Style */
+
+.highlight { /*Work on a proper highlighting style -> animation left to right?*/
+  background-color: yellow;
+}
+
+.underline:hover { /* Animation, left to right*/
+  text-decoration: underline;
+}
+
+.huge {
+  font-size: 10rem;
+  font-style: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration:none;
+}
+footer {
+  margin-top: 4rem;
+  align-self: center;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 0.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 0.25rem;
+}
