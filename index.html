@@ -2,31 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="script.js"></script>
     <title>Maxime Bellemare</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="bg-light" oncontextmenu="return false;">
-    <div class="card card-light">
-      <header class="header">
-          <h1 class="big-heading bold">Hi, I'm Maxime</h1>
-          <h2 class="medium-heading bold">Computer Science Student</h2>
+  <body class="bg" oncontextmenu="return false;">
+    <div class="card card-dark">
+      <button id="switch" onclick="toggleTheme()">🌙</button>
+      <header class="header m-margin">
+          <h1 class="b-heading bold">Hi, I'm Maxime</h1>
+          <h2 class="m-heading bold">Computer Science Student</h2>
       </header>
       <section class="bio">
-          <img class="bio-picture
-          bio-picture-light" src="./img/profile.jpg" alt="profile">
+          <img class="bio-picture bio-picture-dark" src="./img/profile.jpg"
+          alt="profile">
           <div class="bio-text justify">
-            <h3 class="small-heading bold">Short</h3>
+            <h3 class="s-heading bold">Short</h3>
             <p class="bio-p1">Currently studying computer science at the
-            <a class="link-dark"href="https://www.umontreal.ca/en/">University of
-            Montreal</a>. Quite a Zettelkasten enthusiast as well as a total book
-            worm. Fan of simplicity, and ethic.</p>
-            <p class="bio-p2">I also occasionally <a class="link-dark"
+            <a class="underline"href="https://www.umontreal.ca/en/">University
+            of Montreal</a>. Quite a Zettelkasten enthusiast as well as a total
+            bookworm. Fan of simplicity, and ethic.</p>
+            <p class="bio-p2">I also occasionally <a class="underline"
             href="https://www.averysimple.blog">write</a> on hypothetical
             topics.</p>
           </div>
       </section>
-      <section class="projects">
-          <h3 class="small-heading bold">Projects</h3>
+      <section class="projects m-margin">
+          <h3 class="s-heading bold">Projects</h3>
           <ul>
             <li>
               <div class="projects-container">Dummy Project One</div>
@@ -37,13 +39,21 @@
           </ul>
       </section>
       <footer class="footer center">
-          <a class="btn btn-dark bold"href="mailto:hello@maximebellemare.com">
+          <a class="btn"href="mailto:hello@maximebellemare.com">
           Send a thoughful message</a>
       </footer>
     </div>
   </body>
 </html>
 
+
+<!--
+
+Icon for dark and light theme
+
+☼
+☾
+-->
 
 
 
