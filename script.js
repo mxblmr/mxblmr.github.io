@@ -7,17 +7,19 @@ function setTheme(themeName) {
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
-        document.getElementById('switch').innerHTML = '🌙';
+        // document.getElementById('switch').innerHTML = 'Dark';
     } else {
         setTheme('theme-dark');
-        document.getElementById('switch').innerHTML = '🌞';
+        // document.getElementById('switch').innerHTML = 'Light';
     }
 }
 // Immediately invoked function to set the theme on initial load
 (function () {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-dark');
+        // document.getElementById('switch').innerHTML = 'Dark';
     } else {
         setTheme('theme-light');
+        // document.getElementById('switch').innerHTML = 'Light';
     }
 })();
