@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="/assets/js/script.js"></script>
+    <title>Maxime Bellemare</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body class="body" oncontextmenu="return false;">
+    <div class="card">
+      <header class="header m-margin">
+          <h1>Hi, I'm {{ site.first_name }}</h1>
+          <h2>{{ site.occupation }}</h2>
+      </header>
+      <section class="container">
+          <img class="profile b-profile" src="assets/img/profile.jpg"
+          alt="profile">
+          <div class="bio-text justify">
+            {{ content }}
+          </div>
+      </section>
+      <section class="contact center">
+        <a class="btn"href="mailto:hello@maximebellemare.com">
+        Send a thoughful message</a>
+      </section>
+      <footer class="center">
+        <button id="switch" onclick="toggleTheme()">&#9790;</button>
+      </footer>
+    </div>
+  </body>
+</html>
