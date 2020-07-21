@@ -2,19 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/assets/js/script.js"></script>
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body class="body" oncontextmenu="return false;">
     <div class="card">
       <h1> {{ title }}</h1>
-      <h2> test </h2>
+      <h2> Index </h2>
       <ul>
         {% for post in site.posts %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.date }}</p>
+          <p>{{ post.date | date: "%-d %B %Y" }}</p>
           <p>{{ post.tags }}</p>
         </li>
         {% endfor %}

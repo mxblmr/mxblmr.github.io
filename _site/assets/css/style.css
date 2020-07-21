@@ -109,6 +109,9 @@ p {
 .justify {
   text-align: justify;
 }
+.right {
+  text-align: right;
+}
 
 /* Inline */
 ul {
@@ -128,8 +131,9 @@ a:hover {
 /* |- - - - - - Profile Picture - - - - - -| */
 .profile {
   border-radius: 100%;
-  border: var(--color-secondary) 3px solid;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  border: var(--color-secondary) 5px solid;
+  box-shadow:
+  0 4px 4px 2px rgba(0, 0, 0, .3);
 }
 .b-profile {
   width: 10rem;
@@ -149,13 +153,6 @@ a:hover {
 }
 
 /* |- - - - - - Button - - - - - -| */
-#switch {
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  background-color: var(--color-primary);
-  color: #8C8C8C;
-}
 .btn {
   display: inline-block;
   position: relative;
@@ -167,12 +164,80 @@ a:hover {
   color: #FDFDFD;
   text-align:center;
   text-decoration: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0.5px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease;
 }
 .btn:hover{
-  transform: scale(1.025);
+  transform: scale(0.95);
   transition: 0.5s ease;
+}
+/* |- - - - - - Switch - - - - - -| */
+#switch {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: var(--color-primary);
+  color: #8C8C8C;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 69.2px;
+  height: 30.4px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow:
+  0 3px 3px 0 rgba(0, 0, 0, 0.2),
+  inset 0 0 6px 2px rgba(0, 0, 0, 0.1),
+  inset 0 1.5px 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+  background-color: var(--color-primary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.6px;
+  width: 18.4px;
+  left: 6.4px;
+  bottom: 6.4px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  /* background-color: #2196F3; */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
 }
 
 /* |- - - - - - Margin - - - - - -| */
