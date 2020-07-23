@@ -14,8 +14,8 @@
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
               <p>{{ post.date | date: "%-d %B %Y" }}</p>
             </div>
-            <div class=" tag-container tag-{{ post.tags }}">
-              <span class="tag">{{ post.tags }}</span>
+            <div class="">
+              <span class="tag tag-{{ post.tags }}">{{ post.tags }}</span>
             </div>
           </li>
           {% endfor %}

@@ -20,6 +20,8 @@
   flex-direction: column;
   width: 100%;
 }
+.content {
+}
 .wrapper {
   margin: 1rem;
 }
