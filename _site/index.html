@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <script src="/assets/js/script.js"></script>
-    <title>Maxime Bellemare</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/png" href="">
+
+  <!-- Page -->
+  <title>Maxime Bellemare</title>
+  <meta name="description" content="This is the personal blog & website of Maxime Bellemare">
+
+  <!-- OpenGraph tags -->
+  <meta name="og:locale" content="en_CA">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="Maxime Bellemare">
+  <meta name="og:description" content="This is the personal blog & website of Maxime Bellemare">
+  <meta name="og:image" content="">
+  <meta name="og:url" content="/">
+
+  <!-- Scripts -->
+  <script src="/assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/6f34bab457.js" crossorigin="anonymous"></script>
+</head>
+
   <body class="body" oncontextmenu="return false;">
     <div class="card">
-      <header class="header m-margin">
+      <div class="wrapper">
+        <header class="container">
           <h1>Hi, I'm Maxime</h1>
           <h2>Computer Science Student</h2>
-      </header>
-      <section class="container">
-          <img class="profile b-profile" src="assets/img/profile.jpg"
-          alt="profile">
-          <div class="bio-text justify">
-            <h3 id="short">Short</h3>
+          <img class="center img rd b-img th-marg" src="assets/img/profile.jpg" alt="profile">
+        </header>
+        <section class="content container tb-marg justify">
+          <h3 id="short">Short</h3>
 <p>Currently studying computer science at the <a href="https://www.umontreal.ca/en/">University of Montreal</a>. Quite a Zettelkasten enthusiast as well as a total bookworm. Fan of simplicity, and ethic.</p>
 
 <p>I also occasionally <a href="blog">write</a> on hypothetical topics.</p>
@@ -27,21 +43,30 @@
   <li>Dummy Project Two</li>
 </ul>
 
+        </section>
+        <section class="contact container vs-marg">
+          <div class="center">
+            <a class="btn"href="mailto:hi@mxblmr.ca">
+            Send a thoughful message</a>
           </div>
-      </section>
-      <section class="contact center">
-        <a class="btn"href="mailto:hello@maximebellemare.com">
-        Send a thoughful message</a>
-      </section>
-      <div class="m-margin">
+        </section>
+        <footer class="container social">
+  <div class="">
+    <ul>
+      <li><a href="twitter.com/mxblmr"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="github.com/mxblmr"><i class="fab fa-github fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div class="">
+      <label class="switch">
+    <input type="checkbox" onclick="toggleTheme()">
+    <span class="slider round"></span>
+  </label>
+
+  </div>
+</footer>
 
       </div>
-      <footer class="right">
-        <label class="switch">
-          <input type="checkbox" onclick="toggleTheme()">
-          <span class="slider round"></span>
-        </label>
-      </footer>
     </div>
   </body>
 </html>

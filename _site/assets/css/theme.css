@@ -1,0 +1,14 @@
+/* |- - - - - - Color Palette - - - - - -| */
+
+.theme-light {
+  --color-primary: #FAFAFA;
+  --color-secondary: #F2F2F2;
+  --color-font: #262626;
+  --color-icon: #C8C8C8;
+}
+.theme-dark {
+  --color-primary: #262626;
+  --color-secondary: #1F1F1F;
+  --color-font: #FAFAFA;
+  --color-icon: #121212;
+}

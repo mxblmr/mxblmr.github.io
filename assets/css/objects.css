@@ -1,0 +1,124 @@
+
+
+/* Switch */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 69.2px;
+  height: 30.4px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow:
+    inset 0 0 6px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1.5px 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+  background-color: var(--color-primary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.6px;
+  width: 18.4px;
+  left: 6.4px;
+  bottom: 6.4px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+}
+/* -------------------------------- */
+/* Button */
+.btn {
+  display: block;
+  position: relative;
+  max-width: 210px;
+  margin: 2rem;
+  padding: 10px 16px;
+  border:none;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: #1E90FF;
+  color: #FDFDFD;
+  text-align:center;
+  text-decoration: none;
+  box-shadow:
+    0 4px 4px 1px rgba(0, 0, 0, 0.3),
+    inset 0 3px 10px 1px rgba(255, 255, 255, 0.2);
+  transition: all .5s ease;
+}
+.btn:hover {
+  transform: translateY(1px);
+  box-shadow:
+    0 4px 4px 1px rgba(0, 0, 0, 0.1),
+    inset 0 3px 15px 1px rgba(0, 0, 0, 0.3);
+  transition: all .5s ease;
+}
+/* Social */
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.social ul {
+  display: inline-flex;
+}
+.social li {
+  margin: 0 0.3rem;
+}
+.social li a {
+  border: none;
+}
+.social li a i {
+  color: var(--color-icon);
+}
+
+.blog-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-post .tag-container {
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #FDFDFD;
+  box-shadow:
+    inset 0 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.tag {
+  font-size: .9rem;
+  font-weight: bold;
+}
+.tag-Productivity {
+  background-color: #048BA8;
+}
+
+.tag-Test {
+  background-color: #16DB93;
+}

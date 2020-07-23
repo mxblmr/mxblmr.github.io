@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  {{ include head.html }}
-  <body>
+  {% include head.html %}
+  <body class="body">
     <div class="card">
       <h1>{{ page.title }}</h1>
       <h2>{{ page.date | date: "%-d %B %Y" }}</h2>
       {{ content }}
+      {% include switch.html %}
     </div>
   </body>
 </html>

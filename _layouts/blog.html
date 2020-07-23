@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/assets/js/script.js"></script>
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
+  {% include head.html %}
   <body class="body" oncontextmenu="return false;">
     <div class="card">
-      <h1> {{ title }}</h1>
-      <h2> Index </h2>
-      <ul>
-        {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.date | date: "%-d %B %Y" }}</p>
-          <p>{{ post.tags }}</p>
-        </li>
-        {% endfor %}
-      </ul>
+      <header class="container">
+        <h1>Index</h1>
+      </header>
+      <section class="container vs-marg">
+        <ul>
+          {% for post in site.posts %}
+          <li class="blog-post">
+            <div class="">
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <p>{{ post.date | date: "%-d %B %Y" }}</p>
+            </div>
+            <div class=" tag-container tag-{{ post.tags }}">
+              <span class="tag">{{ post.tags }}</span>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% include footer.html %}
     </div>
   </body>
 </html>
