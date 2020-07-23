@@ -68,7 +68,7 @@ input:checked + .slider:before {
   text-decoration: none;
   box-shadow:
     0 4px 4px 1px rgba(0, 0, 0, 0.3),
-    inset 0 3px 10px 1px rgba(255, 255, 255, 0.2);
+    inset 0 3px 10px 1px rgba(255, 255, 255, 0.1);
   transition: all .5s ease;
 }
 .btn:hover {
@@ -89,7 +89,9 @@ input:checked + .slider:before {
   display: inline-flex;
 }
 .social li {
-  margin: 0 0.3rem;
+  padding:0;
+  line-height: 1rem;
+  margin: 0 0.5rem;
 }
 .social li a {
   border: none;
@@ -99,6 +101,8 @@ input:checked + .slider:before {
 }
 
 .blog-post {
+  padding-left: 0;
+  line-height: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +122,6 @@ input:checked + .slider:before {
 .tag-Productivity {
   background-color: #048BA8;
 }
-
 .tag-Test {
   background-color: #16DB93;
 }
