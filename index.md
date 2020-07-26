@@ -13,5 +13,5 @@ Currently studying computer science at the [University of Montreal](https://www.
 I also occasionally [write](/blog) on hypothetical topics.
 
 ### Projects
-  - Dummy Project One
-  - Dummy Project Two
+  - [Stimuli](http://stimuli.xyz)
+  - [Jekyll Theme](http://github.com/mxblmr/utopia)
