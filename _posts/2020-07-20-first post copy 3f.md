@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "This is a test of a slightly longer title."
+title:  "Emily is hot"
 date:   2019-12-31 23:59:59
 tags: Test
 ---

@@ -25,16 +25,36 @@
 
   <body class="body" oncontextmenu="return false;">
     <div class="card">
-      <div class="center">
+      <div class="container wrapper">
   <h1>Error 404</h1>
-  <p><strong>Page not found</strong></p>
+  <p class="bold">Page not found</p>
   <p>The requested page could not be found.</p>
 </div>
 
-        <label class="switch">
+      <footer class="container social social-light">
+  <div class="social-container flex-left">
+    <ul>
+      <li><a href="http://twitter.com/mxblmr">
+        <i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://github.com/mxblmr">
+        <i class="fab fa-github fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div id="home" class="social-container flex-center">
+    <ul>
+      <li><a class="" href="/index"><i class="fas fa-igloo fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div class="social-container flex-right">
+    <ul>
+      <li>  <label class="switch">
     <input type="checkbox" onclick="toggleTheme()">
-    <span class="slider round"></span>
+    <span class="slider slider-light round"></span>
   </label>
+</li>
+    </ul>
+  </div>
+</footer>
 
     </div>
   </body>

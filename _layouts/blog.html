@@ -4,11 +4,11 @@
   <body class="body" oncontextmenu="return false;">
     <div class="card">
       <header class="container">
-        <h1>Index</h1>
+        <h1>Blog</h1>
       </header>
       <section class="container bb-marg">
         <ul>
-          {% for post in site.posts %}
+          {% for post in paginator.posts %}
           <li class="blog-post">
             <div class="">
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -20,6 +20,25 @@
           </li>
           {% endfor %}
         </ul>
+        <div class="container vb-marg">
+          <nav class="blog-nav">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="noborder center">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+            {% else %}
+            <span class="center hide"><i class="fas fa-arrow-left"></i></span>
+            {% endif %}
+            <span class="bold center">| {{ paginator.page }} |</span>
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="noborder center">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            {% else %}
+            <span class="center hide"><i class="fas fa-arrow-right"></i></span>
+            {% endif %}
+          </nav>
+        </div>
       </section>
       {% include footer.html %}
     </div>

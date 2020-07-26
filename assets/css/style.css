@@ -46,6 +46,10 @@ a:hover, a:focus {
   border-color: #4169E1;
   transition: 250ms ease-out;
 }
+
+.noborder {
+  border: none;
+}
 /* a small {
   font-size:11px;
   color:#777;

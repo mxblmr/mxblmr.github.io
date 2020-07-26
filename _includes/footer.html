@@ -1,11 +1,20 @@
-<footer class="container social">
-  <div class="">
+<footer class="container social social-light">
+  <div class="social-container flex-left">
     <ul>
-      <li><a href="twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter fa-2x"></i></a></li>
-      <li><a href="github.com/{{ site.github_username }}"><i class="fab fa-github fa-2x"></i></a></li>
+      <li><a href="http://twitter.com/{{ site.twitter_username }}">
+        <i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://github.com/{{ site.github_username }}">
+        <i class="fab fa-github fa-2x"></i></a></li>
     </ul>
   </div>
-  <div class="">
-    {% include switch.html %}
+  <div id="home" class="social-container flex-center">
+    <ul>
+      <li><a class="" href="/index"><i class="fas fa-igloo fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div class="social-container flex-right">
+    <ul>
+      <li>{% include switch.html %}</li>
+    </ul>
   </div>
 </footer>

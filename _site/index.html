@@ -23,6 +23,11 @@
   <script src="https://kit.fontawesome.com/6f34bab457.js" crossorigin="anonymous"></script>
 </head>
 
+  <style media="screen">
+    #home {
+      visibility: hidden;
+    }
+  </style>
   <body class="body" oncontextmenu="return false;">
     <div class="card">
       <div class="wrapper">
@@ -35,7 +40,7 @@
           <h3 id="short">Short</h3>
 <p>Currently studying computer science at the <a href="https://www.umontreal.ca/en/">University of Montreal</a>. Quite a Zettelkasten enthusiast as well as a total bookworm. Fan of simplicity, and ethic.</p>
 
-<p>I also occasionally <a href="blog">write</a> on hypothetical topics.</p>
+<p>I also occasionally <a href="/blog">write</a> on hypothetical topics.</p>
 
 <h3 id="projects">Projects</h3>
 <ul>
@@ -50,19 +55,28 @@
             Send a thoughful message</a>
           </div>
         </section>
-        <footer class="container social">
-  <div class="">
+        <footer class="container social social-light">
+  <div class="social-container flex-left">
     <ul>
-      <li><a href="twitter.com/mxblmr"><i class="fab fa-twitter fa-2x"></i></a></li>
-      <li><a href="github.com/mxblmr"><i class="fab fa-github fa-2x"></i></a></li>
+      <li><a href="http://twitter.com/mxblmr">
+        <i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="http://github.com/mxblmr">
+        <i class="fab fa-github fa-2x"></i></a></li>
     </ul>
   </div>
-  <div class="">
-      <label class="switch">
+  <div id="home" class="social-container flex-center">
+    <ul>
+      <li><a class="" href="/index"><i class="fas fa-igloo fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div class="social-container flex-right">
+    <ul>
+      <li>  <label class="switch">
     <input type="checkbox" onclick="toggleTheme()">
-    <span class="slider round"></span>
+    <span class="slider slider-light round"></span>
   </label>
-
+</li>
+    </ul>
   </div>
 </footer>
 

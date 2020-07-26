@@ -5,12 +5,15 @@
     <div class="card">
       <header class="container">
           <div class="">
-            <h1>{{ page.title }}</h1>
+            <h1 class="">{{ page.title }}</h1>
             <h2>{{ page.date | date: "%-d %B %Y" }}</h2>
           </div>
       </header>
-      <section class="container content vb-marg justify">
+      <section class="container content vs-marg justify">
         {{ content }}
+        <a class="noborder bb-marg center vb-marg" href="javascript:history.back()">
+          <i class="fas fa-backward"></i>
+        </a>
       </section>
       {% include footer.html %}
     </div>

@@ -1,3 +1,4 @@
+
 /*
   This script toggles theme switch through an onClick event
 */
